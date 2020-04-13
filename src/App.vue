@@ -29,7 +29,7 @@
   <!-- Masthead -->
   <header class="masthead">
     <div class="container h-100">
-      <div class="row h-100 align-items-center justify-content-center ">
+      <div class="row h-100 align-items-center justify-content-center">
         <div class="col-lg-12 align-self-end mb-3">
           <h1 class="text-uppercase text-dark font-weight-bold"> PC Cleaner Booster 8</h1>
           <h2>Enjoy a Faster and More Secure Mac</h2>
@@ -46,16 +46,22 @@
     <section>
       <slider />
     </section>
+
+    <!-- footer -->
+    <section>
+       <Footer></Footer>
+    </section>
     
   </div>
 </template>
 
 <script>
   import slider from './components/Slider'
+  import Footer from './components/Footer'
 export default {
-  name: 'App',
   components: {
-    slider
+    slider,
+    Footer
   }
 }
 </script>
