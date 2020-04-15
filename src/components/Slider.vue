@@ -1,9 +1,10 @@
 <template>
   <div id="container">
+    <link rel="stylesheet"  href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
     <!-- What MacBooster 8 Can Do for You? -->
     <div class="container">
         <div class="pt-5">
-            <h1 class="text-center pt-2 pb-2">What MacBooster 8 Can Do for You?</h1>
+            <h1 class="text-center pt-2 pb-2">What Pc Cleaner Booster 8 Can Do for You?</h1>
             <div class="row">
                 <div class="col-md-4 pt-3 text-center">
                   <img class="d-icons01 pb-4" src="../assets/images/d-icons01.png" alt="" srcset="">
@@ -179,10 +180,10 @@ span.pt-2.sj {
   width: 536px;
   height: 338px;
   transition: all .3s ease;
-  transform:translate3d(-255px, 0, 0) scale(.81);
-  -webkit-transform:translate3d(-255px, 0, 0) 
-  scale(.81);opacity:.4;z-index:1;
-  animation: myfirst 30s linear infinite;
+  transform:translate3d(-255px, 0, 0) scale(.81) scale(.81);
+  opacity:.4; 
+  z-index:1;
+  animation: p1 30s linear infinite;
 }
 .p2 {
   position: absolute;
@@ -191,9 +192,10 @@ span.pt-2.sj {
   width: 536px;
   height: 338px;
   transition: all .3s ease;
-  transform:translate3d(0, 0, 0) scale(1);
-  -webkit-transform:translate3d(0, 0, 0) 
-  scale(1);opacity:1;z-index:4;
+  transform:translate3d(0, 0, 0) scale(1) scale(1); 
+  opacity:1;
+  z-index:4;
+  animation: p2 3s linear infinite;
 
 }
 .p3 {
@@ -206,13 +208,44 @@ span.pt-2.sj {
   transform:translate3d(255px, 0, 0) scale(.81);
   -webkit-transform:translate3d(255px, 0, 0)
    scale(.81);opacity:.8;z-index:1s;
+  animation: p3 30s linear infinite;
 }
-@keyframes myfirst {
+@keyframes p1 {
   0% {
-    left: -25%;
+    // left: 5%;
+    //  opacity: 1;
   }
   100% {
+    // left: 100%;
+    // opacity: 1;
+  }
+}
+@keyframes p2 {
+  0% {
     left: 100%;
+    opacity: 1;
+  }
+  90% {
+    left: 50%;
+     transform:translate3d(-255px, 0, 0) scale(.81) scale(.81);
+     opacity:.4; 
+     z-index:1;
+  }
+  100% {
+    // left: 100%;
+    //  transform:translate3d(-255px, 0, 0) scale(.81) scale(.81);
+    //  opacity:.4; 
+    //  z-index:1;
+  }
+}
+@keyframes p3 {
+  0% {
+    // left: -25%;
+    //  opacity: 1;
+  }
+  100% {
+    // left: 100%;
+    // opacity: 1;
   }
 }
 .p1Performace {
